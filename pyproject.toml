@@ -1,0 +1,19 @@
+[project]
+name = "endocytosis-tracking"
+version = "0.1.0"
+description = "Starter project for tracking endocytic vesicles from microscopy time-lapse sequences."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "scikit-image",
+    "scikit-learn",
+    "opencv-python",
+    "matplotlib",
+    "pandas",
+    "jupyter",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]

@@ -12,9 +12,10 @@ Structure
 - `tests/` - unit tests (not yet populated)
 
 Quick start
-1. Create a virtual environment and install dependencies from `requirements.txt`.
-2. Put a sequence of frames (png/jpg/tif) into `data/frames/`.
-3. Run `python run_tracking.py --input data/frames --output results`.
+1. Install [uv](https://docs.astral.sh/uv/) (already bundled in this repo's workflow) and run `uv sync` to create/refresh the local `.venv` from `pyproject.toml`.
+2. Activate the environment (`.venv\Scripts\activate` on Windows) or prefix commands with `uv run`.
+3. Put a sequence of frames (png/jpg/tif) into `data/frames/`.
+4. Run `uv run python run_tracking.py --input data/frames --output results`.
 
 Next steps
 - Add dataset loader and sample dataset
