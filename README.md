@@ -1,6 +1,23 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ytM8p5PU)
-*Reminder*
-*   *Do not miss [deadline](https://su2.utia.cas.cz/labs.html#projects) for uploading your implementation and documentation of your final project.*
-*   *Include working demo in Colab, in which you clearly demonstrate your results. Please refer to the Implementation section on the [labs website](https://su2.utia.cas.cz/labs.html#projects).*
-*   *Do not upload huge datasets to GitHub repository.*
+# Endocytosis Tracking
 
+This repository is a starter project for tracking endocytic vesicles from microscopy time-lapse image sequences.
+
+Purpose
+- Provide a small, well-structured Python project to iterate on preprocessing, detection, and tracking methods.
+
+Structure
+- `src/` - core modules (data loading, preprocessing, tracking, models, utils)
+- `notebooks/` - example notebook with usage
+- `data/` - place raw frames or sample dataset here
+- `tests/` - unit tests (not yet populated)
+
+Quick start
+1. Create a virtual environment and install dependencies from `requirements.txt`.
+2. Put a sequence of frames (png/jpg/tif) into `data/frames/`.
+3. Run `python run_tracking.py --input data/frames --output results`.
+
+Next steps
+- Add dataset loader and sample dataset
+- Implement and evaluate detection models
+- Improve tracking (Kalman, Hungarian assignment)
+- Add visualization and metrics (MOTA/MOTP)
