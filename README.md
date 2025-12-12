@@ -89,11 +89,11 @@ For detailed information about the improved generator, see the README in the [HR
 
 ### K-Fold Cross-Validation with Manual Annotations (StarDist)
 
-For **StarDist**, we employed a different approach using newly annotated real data with k-fold cross-validation. This strategy helps maximize the use of limited annotated data while providing robust performance estimates.
+For **StarDist**, we employed a different approach using k-fold cross-validation on validation data with bonus data annotated by hand with SAM3 HITL workflow using label-studio. This strategy helps maximize the use of limited annotated data while providing robust performance estimates.
 
 ## Results
 
-Various detection-tracking combinations were evaluated. Specific numerical results will be presented during the project presentation. Through **non-standard approaches**, we achieved relatively good results for:
+Various detection-tracking combinations were evaluated. Specific numerical results will be presented during the project presentation. Through **non-standard approaches**, we achieved very good results for:
 
 - **HRNet + LapTrack**
 - **StarDist + LapTrack**
@@ -104,10 +104,12 @@ Various detection-tracking combinations were evaluated. Specific numerical resul
 
 2. **btrack:** Ulicna, K., Vallardi, G., Charras, G., Lowe, A. R. (2021). Automated deep lineage tree analysis using a Bayesian single cell tracking approach. *Frontiers in Computer Science*. [https://github.com/quantumjot/btrack](https://github.com/quantumjot/btrack)
 
-3. **SAM 2:** Ravi, N., et al. (2024). SAM 2: Segment Anything in Images and Videos. *Meta AI*. [https://github.com/facebookresearch/sam2](https://github.com/facebookresearch/sam2)
+3. **SAM 3:** Carion, N., et al. (2025). SAM 3: Segment Anything with Concepts. *Meta AI*. [https://github.com/facebookresearch/sam3](https://github.com/facebookresearch/sam3)
 
 4. **HRNet:** Wang, J., et al. (2020). Deep High-Resolution Representation Learning for Visual Recognition. *IEEE TPAMI*. [https://github.com/HRNet](https://github.com/HRNet)
 
 5. **StarDist:** Schmidt, U., Weigert, M., Broaddus, C., Myers, G. (2018). Cell Detection with Star-Convex Polygons. *MICCAI*. [https://github.com/stardist/stardist](https://github.com/stardist/stardist)
 
 6. **UTIA Validation Data:** Institute of Information Theory and Automation, Czech Academy of Sciences. [https://su2.utia.cas.cz](https://su2.utia.cas.cz)
+
+7. **Label Studio:** Tkachenko, M., et al. (2020). Label Studio: Data labeling software. *Heartex*. [https://github.com/HumanSignal/label-studio](https://github.com/HumanSignal/label-studio)
