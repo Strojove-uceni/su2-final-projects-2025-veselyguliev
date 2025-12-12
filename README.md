@@ -38,6 +38,8 @@ HRNet proved to be a better alternative to U-Net++ in our experiments and was su
 
 SAM3 is a pretrained foundation model for image segmentation. We used SAM3 directly without additional training, only combining it with tracking methods to evaluate its out-of-the-box performance on CCP detection.
 
+**HITL annotated data using SAM3:**  [https://github.com/veselm73/SU2/tree/main/annotation/sam_data/unet_train](https://github.com/veselm73/SU2/tree/main/annotation/sam_data/unet_train)
+
 **Author:** Matyáš Veselý
 
 ### StarDist
@@ -46,9 +48,9 @@ StarDist is a deep learning method originally designed for star-convex object de
 
 **Author:** Matyáš Veselý
 
-**Trainig:** 
+**Trainig:** `SU2_StarDist_final.ipynb`
 
-**Inference:** 
+**Inference:** `SU2_StarDist_inference.ipynb`
 
 **Repository:** [https://github.com/veselm73/SU2.git](https://github.com/veselm73/SU2.git)
 
@@ -57,6 +59,8 @@ StarDist is a deep learning method originally designed for star-convex object de
 ### LapTrack
 
 LapTrack is a tracking algorithm based on the Linear Assignment Problem (LAP) formulation. It solves the frame-to-frame linking problem by minimizing a global cost function that considers spatial distances between detections. LapTrack is well-suited for particle tracking scenarios where objects do not divide.
+
+**Benchmark on GT data:** `tracking_benchmark_laptrack_gt_3.ipynb`
 
 For detailed parameter configuration, see the [LapTrack documentation](https://laptrack.readthedocs.io/) and our repositories.
 
