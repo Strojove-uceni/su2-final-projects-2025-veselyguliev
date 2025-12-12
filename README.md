@@ -18,6 +18,8 @@ U-Net++ is an encoder-decoder architecture with nested skip connections that bri
 
 During initial experiments with limited training data, U-Net++ was compared against HRNet. HRNet showed better performance, therefore we did not train U-Net++ on larger datasets. The notebook contains training code, parameter sweep functionality, and evaluation tools.
 
+**Author:** Ruslan Guliev
+
 **Showcase:** `UnetPlusPlus_showcase.ipynb`
 
 ### HRNet (High-Resolution Network)
@@ -25,6 +27,8 @@ During initial experiments with limited training data, U-Net++ was compared agai
 HRNet maintains high-resolution representations throughout the network by connecting multi-resolution subnetworks in parallel. Unlike traditional approaches that recover high resolution from low resolution, HRNet preserves spatial precision, making it well-suited for detecting small biological structures.
 
 HRNet proved to be a better alternative to U-Net++ in our experiments and was subsequently trained on larger datasets. The notebook includes loading of a pretrained model trained on 3000 synthetic samples + 2000 fine-tuning samples over 50 epochs.
+
+**Author:** Ruslan Guliev
 
 **Showcase:** `HRnet_showcase.ipynb`
 
@@ -34,9 +38,17 @@ HRNet proved to be a better alternative to U-Net++ in our experiments and was su
 
 SAM3 is a pretrained foundation model for image segmentation. We used SAM3 directly without additional training, only combining it with tracking methods to evaluate its out-of-the-box performance on CCP detection.
 
+**Author:** Matyáš Veselý
+
 ### StarDist
 
 StarDist is a deep learning method originally designed for star-convex object detection in microscopy images. It predicts object boundaries using radial distances from object centers, making it effective for detecting roughly circular structures. StarDist is particularly robust for overlapping objects.
+
+**Author:** Matyáš Veselý
+
+**Trainig:** 
+
+**Inference:** 
 
 **Repository:** [https://github.com/veselm73/SU2.git](https://github.com/veselm73/SU2.git)
 
