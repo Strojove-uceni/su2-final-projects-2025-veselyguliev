@@ -114,6 +114,26 @@ Various detection-tracking combinations were evaluated. Specific numerical resul
 - **HRNet + LapTrack**
 - **StarDist + LapTrack**
 
+  
+## BEST RESULT
+
+  ### StarDist with K-Fold Cross-Validation
+
+  Our best performing approach uses **StarDist** trained on K-fold cross-validation with SAM3 Human-in-the-Loop annotated data.
+
+  #### Detection Performance
+
+  | Metric | Value | Evaluation Method |
+  |--------|-------|-------------------|
+  | **DetA (OOF)** | **0.8129 ± 0.0224** | Out-of-fold |
+  | Best Single Fold | 0.8286 | Fold 5 |
+  | Worst Single Fold | 0.7691 | Fold 2 |
+
+  *All metrics computed with fixed threshold (prob=0.5, nms=0.3) and 5px matching distance.*
+
+  **Best tracker configuration has been found on GT data.
+
+
 ## References
 
 1. **LapTrack:** Fukai, Y. T., Kawaguchi, K. (2022). LapTrack: Linear assignment particle tracking with tunable metrics. *Bioinformatics*. [https://github.com/yfukai/laptrack](https://github.com/yfukai/laptrack)
