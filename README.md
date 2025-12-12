@@ -98,12 +98,6 @@ Various detection-tracking combinations were evaluated. Specific numerical resul
 - **HRNet + LapTrack**
 - **StarDist + LapTrack**
 
-## Interactive Demo
-
-An interactive demonstration notebook is available on Google Colab:
-
-[Open in Colab](https://colab.research.google.com/drive/1m6fo1IB54PDrVjWbymPCrxb0fnfVtZZG?usp=sharing)
-
 ## References
 
 1. **LapTrack:** Fukai, Y. T., Kawaguchi, K. (2022). LapTrack: Linear assignment particle tracking with tunable metrics. *Bioinformatics*. [https://github.com/yfukai/laptrack](https://github.com/yfukai/laptrack)
