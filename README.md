@@ -18,9 +18,10 @@ U-Net++ is an encoder-decoder architecture with nested skip connections that bri
 
 During initial experiments with limited training data, U-Net++ was compared against HRNet. HRNet showed better performance, therefore we did not train U-Net++ on larger datasets. The notebook contains training code, parameter sweep functionality, and evaluation tools.
 
-**Author:** Ruslan Guliev
 
 **Showcase:** `UnetPlusPlus_showcase.ipynb`
+
+**Author:** Ruslan Guliev
 
 ### HRNet (High-Resolution Network)
 
@@ -28,11 +29,12 @@ HRNet maintains high-resolution representations throughout the network by connec
 
 HRNet proved to be a better alternative to U-Net++ in our experiments and was subsequently trained on larger datasets. The notebook includes loading of a pretrained model trained on 3000 synthetic samples + 2000 fine-tuning samples over 50 epochs.
 
-**Author:** Ruslan Guliev
 
 **Showcase:** `HRnet_showcase.ipynb`
 
 **Repository:** [https://github.com/gulierus/SU2_HR-net_U-net.git](https://github.com/gulierus/SU2_HR-net_U-net.git)
+
+**Author:** Ruslan Guliev
 
 ### SAM3 (Segment Anything Model 3)
 
@@ -46,13 +48,14 @@ SAM3 is a pretrained foundation model for image segmentation. We used SAM3 direc
 
 StarDist is a deep learning method originally designed for star-convex object detection in microscopy images. It predicts object boundaries using radial distances from object centers, making it effective for detecting roughly circular structures. StarDist is particularly robust for overlapping objects.
 
-**Author:** Matyáš Veselý
-
 **Trainig:** `SU2_StarDist_final.ipynb`
 
 **Inference:** `SU2_StarDist_inference.ipynb`
 
 **Repository:** [https://github.com/veselm73/SU2.git](https://github.com/veselm73/SU2.git)
+
+**Author:** Matyáš Veselý
+
 
 ## Tracking Methods
 
@@ -106,6 +109,8 @@ For detailed information about the improved generator, see the README in the [HR
 ### K-Fold Cross-Validation with Manual Annotations (StarDist)
 
 For **StarDist**, we employed a different approach using k-fold cross-validation on validation data with bonus data annotated by hand with SAM3 HITL workflow using label-studio. This strategy helps maximize the use of limited annotated data while providing robust performance estimates.
+
+For detailed information see [veselm73/SU2](https://github.com/gulierus/SU2_HR-net_U-net.git).
 
 ## Results
 
