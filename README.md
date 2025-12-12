@@ -19,7 +19,7 @@ U-Net++ is an encoder-decoder architecture with nested skip connections that bri
 During initial experiments with limited training data, U-Net++ was compared against HRNet. HRNet showed better performance, therefore we did not train U-Net++ on larger datasets. The notebook contains training code, parameter sweep functionality, and evaluation tools.
 
 
-**Showcase:** `UnetPlusPlus_showcase.ipynb`
+**Trainig:** `UnetPlusPlus_showcase.ipynb`
 
 **Author:** Ruslan Guliev
 
@@ -29,8 +29,13 @@ HRNet maintains high-resolution representations throughout the network by connec
 
 HRNet proved to be a better alternative to U-Net++ in our experiments and was subsequently trained on larger datasets. The notebook includes loading of a pretrained model trained on 3000 synthetic samples + 2000 fine-tuning samples over 50 epochs.
 
+| HOTA | DetA | AssA |
+|------|------|------|
+| 0.7272 | 0.7590 | 0.6967 |
 
-**Showcase:** `HRnet_showcase.ipynb`
+This represents our best result achieved so far with a relatively small synthetic dataset of 5000 samples. The performance was additionally affected by the fine-tuning phase, which introduced some noise and error into the model. We belief that with bigger computation capacities the result could be even better.
+
+**Inference:** `HRnet_showcase.ipynb`
 
 **Repository:** [https://github.com/gulierus/SU2_HR-net_U-net.git](https://github.com/gulierus/SU2_HR-net_U-net.git)
 
@@ -59,7 +64,7 @@ StarDist is a deep learning method originally designed for star-convex object de
 
 ## Tracking Methods
 
-### LapTrack
+### LapTrack (v0.17.0)
 
 LapTrack is a tracking algorithm based on the Linear Assignment Problem (LAP) formulation. It solves the frame-to-frame linking problem by minimizing a global cost function that considers spatial distances between detections. LapTrack is well-suited for particle tracking scenarios where objects do not divide.
 
