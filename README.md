@@ -115,7 +115,7 @@ For detailed information about the improved generator, see the README in the [HR
 
 For **StarDist**, we employed a different approach using k-fold cross-validation on validation data with bonus data annotated by hand with SAM3 HITL workflow using label-studio. This strategy helps maximize the use of limited annotated data while providing robust performance estimates.
 
-For detailed information see [veselm73/SU2](https://github.com/gulierus/SU2_HR-net_U-net.git).
+For detailed information see [metodology](https://github.com/Strojove-uceni/su2-final-projects-2025-veselyguliev/blob/main/stardist_methodology.md) and [veselm73/SU2](https://github.com/gulierus/SU2_HR-net_U-net.git).
 
 ## Results
 
